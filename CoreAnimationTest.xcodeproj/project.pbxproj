@@ -15,6 +15,7 @@
 		9CA9056620F48D8F00004EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056520F48D8F00004EE0 /* main.m */; };
 		9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */; };
 		9CA9057B20F48D8F00004EE0 /* CoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */; };
+		9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA9058920F4928200004EE0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9CA9057620F48D8F00004EE0 /* CoreAnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTestUITests.m; sourceTree = "<group>"; };
 		9CA9057C20F48D8F00004EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA9058920F4928200004EE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				9CA9056E20F48D8F00004EE0 /* CoreAnimationTestTests */,
 				9CA9057920F48D8F00004EE0 /* CoreAnimationTestUITests */,
 				9CA9055420F48D8D00004EE0 /* Products */,
+				9CA9058820F4928200004EE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				9CA9057C20F48D8F00004EE0 /* Info.plist */,
 			);
 			path = CoreAnimationTestUITests;
+			sourceTree = "<group>";
+		};
+		9CA9058820F4928200004EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CA9058920F4928200004EE0 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
