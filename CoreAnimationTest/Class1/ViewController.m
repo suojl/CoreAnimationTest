@@ -31,15 +31,15 @@
     blueLayer.backgroundColor = [UIColor blueColor].CGColor;
 //    [self.layerView.layer addSublayer:blueLayer];
     UIImage *image = [UIImage imageNamed:@"Snowman"];
-//    self.layerView.layer.contents = (__bridge id)(image.CGImage);
+    self.layerView.layer.contents = (__bridge id)(image.CGImage);
 //    self.layerView.layer.contentsGravity = kCAGravityCenter;    //设置图像拉伸样式
 //    self.layerView.layer.contentsScale = [UIScreen mainScreen].scale;
 //    self.layerView.layer.contentsScale = image.scale;   // 设置图像点和像素的比例关系
 //    self.layerView.layer.masksToBounds = YES;           // 超出边界截取
-//    self.layerView.layer.shadowColor = [UIColor redColor].CGColor;  // 阴影颜色
-//    self.layerView.layer.shadowOpacity = .5f;               // 阴影透明度
-//    self.layerView.layer.shadowOffset = CGSizeMake(0, 0);   // 阴影偏移量
-//    self.layerView.layer.shadowRadius = 10;     // 设置阴影大小
+    self.layerView.layer.shadowColor = [UIColor redColor].CGColor;  // 阴影颜色
+    self.layerView.layer.shadowOpacity = .5f;               // 阴影透明度
+    self.layerView.layer.shadowOffset = CGSizeMake(0, 0);   // 阴影偏移量
+    self.layerView.layer.shadowRadius = 10;     // 设置阴影大小
 
 //    [self addSpriteImage:image withContentRect:CGRectMake(0, 0, 0.5, 0.5) toLayer:self.leftTopView.layer];
     [self addSpriteImage:image withContentRect:CGRectMake(0.5, 0, 0.5, 0.5) toLayer:self.rightTopView.layer];
@@ -51,7 +51,21 @@
 //    self.rightTopView.layer.borderWidth = 25;     // 测试边界线在图层里边
 
     [self addShadowToView:self.leftBottomView withOpacity:.5f shadowRadius:3 andCornerRadius:5];
-    [self addShadowToView:self.layerView withOpacity:.5f shadowRadius:3 andCornerRadius:5];
+//    [self addShadowToView:self.layerView withOpacity:.5f shadowRadius:3 andCornerRadius:5];
+
+    /*------------------------------Class4------------------------------*/
+//    self.layerView.layer.cornerRadius = 15.f;
+//    self.layerView.layer.shadowOpacity = .5;
+//    self.layerView.layer.shadowColor = [UIColor blueColor].CGColor;
+//    self.layerView.layer.shadowRadius = 8;
+//    self.layerView.layer.shadowOffset = CGSizeMake(0, 0);   // 阴影偏移量
+//    CALayer *sonLayer = [CALayer layer];
+//    sonLayer.frame = CGRectMake(0, 0, 200, 150);
+//    sonLayer.backgroundColor = [UIColor lightGrayColor].CGColor;
+//    sonLayer.cornerRadius = 15.f;
+//    sonLayer.masksToBounds = YES;
+//    [self.layerView.layer addSublayer:sonLayer];
+    /*----------------------------Class4-------------------------------*/
 }
 
 
@@ -127,18 +141,24 @@
     [view.superview.layer insertSublayer:shadowLayer below:view.layer];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (UIView *)layerView {
     if (!_layerView) {
         UIView *view = [UIView new];
-        view.frame = CGRectMake(20, 100, 200, 150);
+        view.frame = CGRectMake(20, 200, 200, 150);
         view.backgroundColor = [UIColor lightGrayColor];
         _layerView = view;
     }
     return _layerView;
 }
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    // Pass the selected object to the new view controller.
+//}
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
 @end

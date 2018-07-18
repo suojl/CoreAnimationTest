@@ -16,6 +16,11 @@
 		9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */; };
 		9CA9057B20F48D8F00004EE0 /* CoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */; };
 		9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA9058920F4928200004EE0 /* QuartzCore.framework */; };
+		9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */; };
+		9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5920FECE300095BC13 /* FirstTableViewController.m */; };
+		9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */; };
+		9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */; };
+		9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,16 @@
 		9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTestUITests.m; sourceTree = "<group>"; };
 		9CA9057C20F48D8F00004EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA9058920F4928200004EE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9CC96D7E20FDCA1600E5A564 /* Class3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class3ViewController.h; sourceTree = "<group>"; };
+		9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class3ViewController.m; sourceTree = "<group>"; };
+		9CE0CF5820FECE300095BC13 /* FirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		9CE0CF5920FECE300095BC13 /* FirstTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		9CE0CF5D20FEE0C20095BC13 /* Class5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class5ViewController.h; sourceTree = "<group>"; };
+		9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class5ViewController.m; sourceTree = "<group>"; };
+		9CE0CF6020FEE0DC0095BC13 /* Class4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class4ViewController.h; sourceTree = "<group>"; };
+		9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class4ViewController.m; sourceTree = "<group>"; };
+		9CE0CF6320FEE0EC0095BC13 /* Class6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class6ViewController.h; sourceTree = "<group>"; };
+		9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class6ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,10 +120,15 @@
 		9CA9055520F48D8D00004EE0 /* CoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				9CE0CF6620FEE1D50095BC13 /* Class1 */,
+				9CE0CF5C20FEE0A90095BC13 /* Class6 */,
+				9CE0CF5B20FEE0A10095BC13 /* Class5 */,
+				9CC96D8520FDEE2100E5A564 /* Class4 */,
+				9CC96D7D20FDC92900E5A564 /* Class3 */,
 				9CA9055620F48D8D00004EE0 /* AppDelegate.h */,
 				9CA9055720F48D8D00004EE0 /* AppDelegate.m */,
-				9CA9055920F48D8D00004EE0 /* ViewController.h */,
-				9CA9055A20F48D8D00004EE0 /* ViewController.m */,
+				9CE0CF5820FECE300095BC13 /* FirstTableViewController.h */,
+				9CE0CF5920FECE300095BC13 /* FirstTableViewController.m */,
 				9CA9055C20F48D8D00004EE0 /* Main.storyboard */,
 				9CA9055F20F48D8F00004EE0 /* Assets.xcassets */,
 				9CA9056120F48D8F00004EE0 /* LaunchScreen.storyboard */,
@@ -142,6 +162,51 @@
 				9CA9058920F4928200004EE0 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CC96D7D20FDC92900E5A564 /* Class3 */ = {
+			isa = PBXGroup;
+			children = (
+				9CC96D7E20FDCA1600E5A564 /* Class3ViewController.h */,
+				9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */,
+			);
+			path = Class3;
+			sourceTree = "<group>";
+		};
+		9CC96D8520FDEE2100E5A564 /* Class4 */ = {
+			isa = PBXGroup;
+			children = (
+				9CE0CF6020FEE0DC0095BC13 /* Class4ViewController.h */,
+				9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */,
+			);
+			path = Class4;
+			sourceTree = "<group>";
+		};
+		9CE0CF5B20FEE0A10095BC13 /* Class5 */ = {
+			isa = PBXGroup;
+			children = (
+				9CE0CF5D20FEE0C20095BC13 /* Class5ViewController.h */,
+				9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */,
+			);
+			path = Class5;
+			sourceTree = "<group>";
+		};
+		9CE0CF5C20FEE0A90095BC13 /* Class6 */ = {
+			isa = PBXGroup;
+			children = (
+				9CE0CF6320FEE0EC0095BC13 /* Class6ViewController.h */,
+				9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */,
+			);
+			path = Class6;
+			sourceTree = "<group>";
+		};
+		9CE0CF6620FEE1D50095BC13 /* Class1 */ = {
+			isa = PBXGroup;
+			children = (
+				9CA9055920F48D8D00004EE0 /* ViewController.h */,
+				9CA9055A20F48D8D00004EE0 /* ViewController.m */,
+			);
+			path = Class1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,8 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA9055B20F48D8D00004EE0 /* ViewController.m in Sources */,
+				9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */,
+				9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */,
+				9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */,
+				9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */,
 				9CA9056620F48D8F00004EE0 /* main.m in Sources */,
 				9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */,
+				9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
