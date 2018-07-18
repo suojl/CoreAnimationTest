@@ -21,6 +21,7 @@
 		9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */; };
 		9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */; };
 		9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */; };
+		9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6820FF3FDC0095BC13 /* DiceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class4ViewController.m; sourceTree = "<group>"; };
 		9CE0CF6320FEE0EC0095BC13 /* Class6ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class6ViewController.h; sourceTree = "<group>"; };
 		9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class6ViewController.m; sourceTree = "<group>"; };
+		9CE0CF6720FF3FDC0095BC13 /* DiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceViewController.h; sourceTree = "<group>"; };
+		9CE0CF6820FF3FDC0095BC13 /* DiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +190,8 @@
 			children = (
 				9CE0CF5D20FEE0C20095BC13 /* Class5ViewController.h */,
 				9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */,
+				9CE0CF6720FF3FDC0095BC13 /* DiceViewController.h */,
+				9CE0CF6820FF3FDC0095BC13 /* DiceViewController.m */,
 			);
 			path = Class5;
 			sourceTree = "<group>";
@@ -344,6 +349,7 @@
 				9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */,
 				9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */,
 				9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */,
+				9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */,
 				9CA9056620F48D8F00004EE0 /* main.m in Sources */,
 				9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */,
 				9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */,
