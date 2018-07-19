@@ -10,4 +10,5 @@
 
 @interface DiceViewController : UIViewController
 
+- (IBAction)face3Action:(id)sender;
 @end

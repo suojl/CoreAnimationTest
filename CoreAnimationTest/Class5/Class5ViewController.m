@@ -32,11 +32,11 @@
 //    self.layerView2.layer.affineTransform = CGAffineTransformMakeTranslation(200, 0);
 //    self.layerView.layer.affineTransform = CGAffineTransformMakeShear(.5,0);
     CATransform3D transform3D = CATransform3DIdentity;
-    transform3D.m34 = - 1.0 / 500.0;
+//    transform3D.m34 = - 1.0 / 500.0;
     self.layerView.layer.transform = CATransform3DRotate(transform3D, M_PI_4, 0, 1, 0);
 
     CATransform3D transform3D2 = CATransform3DIdentity;
-    transform3D2.m34 = - 1.0 / 500.0;
+//    transform3D2.m34 = - 1.0 / 500.0;
     self.layerView2.layer.transform = CATransform3DRotate(transform3D2, -M_PI_4, 0, 1, 0);
 
 //    self.innerView.layer.transform = CATransform3DRotate(transform3D2, M_PI_4, 0, 1, 0);
@@ -99,7 +99,7 @@ CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
         UIView *view = [UIView new];
         view.frame = CGRectMake(0, 84, 500, 200);
         view.backgroundColor = [UIColor grayColor];
-        //设置3D的透视效果
+        //设置子视图3D的透视效果
         CATransform3D perspective = CATransform3DIdentity;
         perspective.m34 = - 1.0 / 500.0;
         view.layer.sublayerTransform = perspective;

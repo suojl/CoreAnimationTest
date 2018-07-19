@@ -16,6 +16,8 @@
 		9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */; };
 		9CA9057B20F48D8F00004EE0 /* CoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */; };
 		9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA9058920F4928200004EE0 /* QuartzCore.framework */; };
+		9CB616B121008B8300512F7D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B021008B8300512F7D /* GLKit.framework */; };
+		9CB616B321008B8F00512F7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B221008B8F00512F7D /* OpenGLES.framework */; };
 		9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */; };
 		9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5920FECE300095BC13 /* FirstTableViewController.m */; };
 		9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */; };
@@ -59,6 +61,8 @@
 		9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTestUITests.m; sourceTree = "<group>"; };
 		9CA9057C20F48D8F00004EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA9058920F4928200004EE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9CB616B021008B8300512F7D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		9CB616B221008B8F00512F7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9CC96D7E20FDCA1600E5A564 /* Class3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class3ViewController.h; sourceTree = "<group>"; };
 		9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class3ViewController.m; sourceTree = "<group>"; };
 		9CE0CF5820FECE300095BC13 /* FirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB616B321008B8F00512F7D /* OpenGLES.framework in Frameworks */,
+				9CB616B121008B8300512F7D /* GLKit.framework in Frameworks */,
 				9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +168,8 @@
 		9CA9058820F4928200004EE0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9CB616B221008B8F00512F7D /* OpenGLES.framework */,
+				9CB616B021008B8300512F7D /* GLKit.framework */,
 				9CA9058920F4928200004EE0 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
