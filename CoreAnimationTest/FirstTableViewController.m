@@ -9,6 +9,7 @@
 #import "FirstTableViewController.h"
 #import "ViewController.h"
 #import "Class3ViewController.h"
+#import "Class8ViewController.h"
 
 @interface FirstTableViewController (){
     NSArray *_dataSource;
@@ -71,6 +72,12 @@
             case 5:
             [self performSegueWithIdentifier:@"Class6Segue" sender:nil];
             break;
+            case 6:
+            [self performSegueWithIdentifier:@"Class7Segue" sender:nil];
+            break;
+            case 7:
+            [self performSegueWithIdentifier:@"Class8Segue" sender:nil];
+            break;
         default:
             break;
     }
@@ -110,13 +117,14 @@
 }
 */
 
-/*
-#pragma mark - Navigation
 
+#pragma mark - Navigation
+/*
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    [segue destinationViewController].title = @"显式动画";
 }
 */
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7C92105ACFC00EA502B /* Class7ViewController.m */; };
+		9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7CC2105D43000EA502B /* Class8ViewController.m */; };
 		9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9055720F48D8D00004EE0 /* AppDelegate.m */; };
 		9CA9055B20F48D8D00004EE0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9055A20F48D8D00004EE0 /* ViewController.m */; };
 		9CA9055E20F48D8D00004EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA9055C20F48D8D00004EE0 /* Main.storyboard */; };
@@ -24,6 +26,7 @@
 		9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6120FEE0DC0095BC13 /* Class4ViewController.m */; };
 		9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */; };
 		9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF6820FF3FDC0095BC13 /* DiceViewController.m */; };
+		9CE50A9C2101DFC100DC5116 /* ReflectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE50A9B2101DFC100DC5116 /* ReflectionView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C93C7C82105ACFC00EA502B /* Class7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class7ViewController.h; sourceTree = "<group>"; };
+		9C93C7C92105ACFC00EA502B /* Class7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class7ViewController.m; sourceTree = "<group>"; };
+		9C93C7CB2105D43000EA502B /* Class8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class8ViewController.h; sourceTree = "<group>"; };
+		9C93C7CC2105D43000EA502B /* Class8ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class8ViewController.m; sourceTree = "<group>"; };
 		9CA9055320F48D8D00004EE0 /* CoreAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA9055620F48D8D00004EE0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9CA9055720F48D8D00004EE0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class6ViewController.m; sourceTree = "<group>"; };
 		9CE0CF6720FF3FDC0095BC13 /* DiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiceViewController.h; sourceTree = "<group>"; };
 		9CE0CF6820FF3FDC0095BC13 /* DiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiceViewController.m; sourceTree = "<group>"; };
+		9CE50A9A2101DFC100DC5116 /* ReflectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReflectionView.h; sourceTree = "<group>"; };
+		9CE50A9B2101DFC100DC5116 /* ReflectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReflectionView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C93C7C52105ACC200EA502B /* Class7 */ = {
+			isa = PBXGroup;
+			children = (
+				9C93C7C82105ACFC00EA502B /* Class7ViewController.h */,
+				9C93C7C92105ACFC00EA502B /* Class7ViewController.m */,
+			);
+			path = Class7;
+			sourceTree = "<group>";
+		};
+		9C93C7C62105ACCD00EA502B /* Class8 */ = {
+			isa = PBXGroup;
+			children = (
+				9C93C7CB2105D43000EA502B /* Class8ViewController.h */,
+				9C93C7CC2105D43000EA502B /* Class8ViewController.m */,
+			);
+			path = Class8;
+			sourceTree = "<group>";
+		};
+		9C93C7C72105ACD700EA502B /* Class9 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Class9;
+			sourceTree = "<group>";
+		};
 		9CA9054A20F48D8D00004EE0 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +163,9 @@
 		9CA9055520F48D8D00004EE0 /* CoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				9C93C7C72105ACD700EA502B /* Class9 */,
+				9C93C7C62105ACCD00EA502B /* Class8 */,
+				9C93C7C52105ACC200EA502B /* Class7 */,
 				9CE0CF6620FEE1D50095BC13 /* Class1 */,
 				9CE0CF5C20FEE0A90095BC13 /* Class6 */,
 				9CE0CF5B20FEE0A10095BC13 /* Class5 */,
@@ -209,6 +246,8 @@
 			children = (
 				9CE0CF6320FEE0EC0095BC13 /* Class6ViewController.h */,
 				9CE0CF6420FEE0EC0095BC13 /* Class6ViewController.m */,
+				9CE50A9A2101DFC100DC5116 /* ReflectionView.h */,
+				9CE50A9B2101DFC100DC5116 /* ReflectionView.m */,
 			);
 			path = Class6;
 			sourceTree = "<group>";
@@ -356,11 +395,14 @@
 				9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */,
 				9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */,
 				9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */,
+				9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */,
 				9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */,
+				9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */,
 				9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */,
 				9CA9056620F48D8F00004EE0 /* main.m in Sources */,
 				9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */,
 				9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */,
+				9CE50A9C2101DFC100DC5116 /* ReflectionView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

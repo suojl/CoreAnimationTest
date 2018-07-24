@@ -27,6 +27,8 @@
 - (void)testExample {
     // This is an example of a functional test case.
     // Use XCTAssert and related functions to verify your tests produce the correct results.
+    NSInteger x = floor(100/5*2);
+    NSLog(@"----%ld",(long)x);
 }
 
 - (void)testPerformanceExample {
