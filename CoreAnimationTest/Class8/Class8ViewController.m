@@ -9,7 +9,7 @@
 #import "Class8ViewController.h"
 
 @interface Class8ViewController ()
-
+@property (nonatomic, weak) IBOutlet UIView *containerView;
 @end
 
 @implementation Class8ViewController
@@ -17,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    CALayer *shipLayer = [CALayer layer];
+    shipLayer.frame = CGRectMake(0, 0, 100, 100);
+    shipLayer.position = CGPointMake(120, 120);
+    shipLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Snowman"].CGImage);
+    [self.containerView.layer addSublayer:shipLayer];
+
+    // animate the ship rotation
+    CABasicAnimation *animation = [CABasicAnimation animation];
+    animation.keyPath = @"transform.rotation";
+    animation.duration = 4.0;
+    animation.byValue = @(M_PI * 3);
+//    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
+//    animation.fromValue = [(shipLayer.presentationLayer ? shipLayer.presentationLayer : shipLayer) valueForKeyPath:animation.keyPath];
+//    [CATransaction begin];
+//    [CATransaction setDisableActions:YES];
+//    [shipLayer setValue:[NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)] forKey:@"transform"];
+//    [CATransaction commit];
+    [shipLayer addAnimation:animation forKey:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
