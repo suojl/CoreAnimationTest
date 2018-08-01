@@ -18,6 +18,7 @@
 		9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */; };
 		9CA9057B20F48D8F00004EE0 /* CoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */; };
 		9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA9058920F4928200004EE0 /* QuartzCore.framework */; };
+		9CB53DA721105B50006B1491 /* Class14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB53DA621105B50006B1491 /* Class14ViewController.m */; };
 		9CB616B121008B8300512F7D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B021008B8300512F7D /* GLKit.framework */; };
 		9CB616B321008B8F00512F7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B221008B8F00512F7D /* OpenGLES.framework */; };
 		9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */; };
@@ -68,6 +69,8 @@
 		9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTestUITests.m; sourceTree = "<group>"; };
 		9CA9057C20F48D8F00004EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA9058920F4928200004EE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9CB53DA521105B50006B1491 /* Class14ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class14ViewController.h; sourceTree = "<group>"; };
+		9CB53DA621105B50006B1491 /* Class14ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class14ViewController.m; sourceTree = "<group>"; };
 		9CB616B021008B8300512F7D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		9CB616B221008B8F00512F7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9CC96D7E20FDCA1600E5A564 /* Class3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class3ViewController.h; sourceTree = "<group>"; };
@@ -163,6 +166,7 @@
 		9CA9055520F48D8D00004EE0 /* CoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				9CB53DA421105B25006B1491 /* Class14 */,
 				9C93C7C72105ACD700EA502B /* Class9 */,
 				9C93C7C62105ACCD00EA502B /* Class8 */,
 				9C93C7C52105ACC200EA502B /* Class7 */,
@@ -210,6 +214,15 @@
 				9CA9058920F4928200004EE0 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9CB53DA421105B25006B1491 /* Class14 */ = {
+			isa = PBXGroup;
+			children = (
+				9CB53DA521105B50006B1491 /* Class14ViewController.h */,
+				9CB53DA621105B50006B1491 /* Class14ViewController.m */,
+			);
+			path = Class14;
 			sourceTree = "<group>";
 		};
 		9CC96D7D20FDC92900E5A564 /* Class3 */ = {
@@ -395,6 +408,7 @@
 				9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */,
 				9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */,
 				9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */,
+				9CB53DA721105B50006B1491 /* Class14ViewController.m in Sources */,
 				9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */,
 				9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */,
 				9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */,

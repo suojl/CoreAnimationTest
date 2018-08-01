@@ -78,6 +78,9 @@
             case 7:
             [self performSegueWithIdentifier:@"Class8Segue" sender:nil];
             break;
+            case 13:
+            [self performSegueWithIdentifier:@"Class14Segue" sender:nil];
+            break;
         default:
             break;
     }

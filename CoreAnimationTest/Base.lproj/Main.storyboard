@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N9i-eN-sfH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N9i-eN-sfH">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -103,6 +103,7 @@
                         <segue destination="qxV-2N-vFd" kind="show" identifier="Class6Segue" id="Ny6-PE-IZE"/>
                         <segue destination="sh2-gC-2od" kind="show" identifier="Class7Segue" id="3z4-Vv-Elh"/>
                         <segue destination="wFT-ra-oY3" kind="show" identifier="Class8Segue" id="Jab-mE-kLd"/>
+                        <segue destination="CBp-Ub-cBL" kind="show" identifier="Class14Segue" id="uBI-lV-0zC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuf-iz-Quz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -323,6 +324,34 @@
             </objects>
             <point key="canvasLocation" x="1517.5999999999999" y="1641.2293853073465"/>
         </scene>
+        <!--Class14 View Controller-->
+        <scene sceneID="i4v-FI-MD9">
+            <objects>
+                <viewController id="CBp-Ub-cBL" customClass="Class14ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LXr-sT-bN1"/>
+                        <viewControllerLayoutGuide type="bottom" id="xgM-DK-tNc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UM9-M1-o84">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8PJ-kl-tsw">
+                                <rect key="frame" x="0.0" y="64" width="320" height="294"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8PJ-kl-tsw" id="wA3-qa-vPb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vcj-8X-vVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623.125" y="1540.1408450704225"/>
+        </scene>
         <!--Class6 View Controller-->
         <scene sceneID="tFi-AO-wSc">
             <objects>
@@ -411,6 +440,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkz-SX-XFQ">
+                                <rect key="frame" x="77" y="366" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAction:" destination="wFT-ra-oY3" eventType="touchUpInside" id="jBJ-OE-AdZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-pa-fgE">
+                                <rect key="frame" x="206" y="366" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startAction:" destination="wFT-ra-oY3" eventType="touchUpInside" id="BrM-W3-kXb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -457,6 +502,9 @@
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="7RL-Cz-uO6" secondAttribute="trailing" constant="20" symbolic="YES" id="csX-cu-hSl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="layerView" destination="uN0-ja-siF" id="GCm-Rc-5DR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLr-r0-7QC" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="m0v-tg-duB" userLabel="Exit" sceneMemberID="exit"/>

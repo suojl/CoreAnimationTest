@@ -8,8 +8,9 @@
 
 #import "Class8ViewController.h"
 
-@interface Class8ViewController ()
-@property (nonatomic, weak) IBOutlet UIView *containerView;
+@interface Class8ViewController () <CAAnimationDelegate>
+@property (nonatomic, strong) IBOutlet UIView *containerView;
+@property (nonatomic, strong) CALayer *shipLayer;
 @end
 
 @implementation Class8ViewController
@@ -17,25 +18,48 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    CALayer *shipLayer = [CALayer layer];
-    shipLayer.frame = CGRectMake(0, 0, 100, 100);
-    shipLayer.position = CGPointMake(120, 120);
-    shipLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Snowman"].CGImage);
-    [self.containerView.layer addSublayer:shipLayer];
+    self.shipLayer = [CALayer layer];
+    self.shipLayer.frame = CGRectMake(0, 0, 100, 100);
+    self.shipLayer.position = CGPointMake(120, 120);
+    self.shipLayer.contents = (__bridge id _Nullable)([UIImage imageNamed:@"Snowman"].CGImage);
+    [self.containerView.layer addSublayer:self.shipLayer];
 
     // animate the ship rotation
     CABasicAnimation *animation = [CABasicAnimation animation];
-    animation.keyPath = @"transform.rotation";
+    animation.keyPath = @"transform.rotation.z";
     animation.duration = 4.0;
+//    animation.delegate = self;
     animation.byValue = @(M_PI * 3);
-//    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)];
-//    animation.fromValue = [(shipLayer.presentationLayer ? shipLayer.presentationLayer : shipLayer) valueForKeyPath:animation.keyPath];
+//    animation.timeOffset = 2.0;
+//    animation.repeatDuration = INFINITY; // 动画无限重复
+//    animation.autoreverses = YES;       // 动画自动返回
+//    animation.removedOnCompletion = NO;
+//    animation.fillMode = kCAFillModeForwards;
+//    animation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI*3, 0, 0, 1)];
+//    animation.fromValue = [(self.shipLayer.presentationLayer ? self.shipLayer.presentationLayer : self.shipLayer) valueForKeyPath:animation.keyPath];
 //    [CATransaction begin];
 //    [CATransaction setDisableActions:YES];
-//    [shipLayer setValue:[NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0, 0, 1)] forKey:@"transform"];
+//    [self.shipLayer setValue:[NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI*3, 0, 0, 1)] forKey:@"transform"];
 //    [CATransaction commit];
-    [shipLayer addAnimation:animation forKey:nil];
+    self.shipLayer.speed = 0;
+    [self.shipLayer addAnimation:animation forKey:nil];
 
+}
+-(IBAction)startAction:(id)sender{
+    CFTimeInterval timeOffset = 3.0f;
+    self.shipLayer.timeOffset = timeOffset;
+}
+-(IBAction)stopAction:(id)sender{
+    CFTimeInterval timeOffset = 1.0f;
+    self.shipLayer.timeOffset = timeOffset;
+}
+- (void)animationDidStop:(CABasicAnimation *)anim finished:(BOOL)flag
+{
+    //set the backgroundColor property to match animation toValue
+    [CATransaction begin];
+    [CATransaction setDisableActions:YES];
+    self.shipLayer.transform = CATransform3DMakeRotation(M_PI * 3, 0, 0, 1);
+    [CATransaction commit];
 }
 
 - (void)didReceiveMemoryWarning {
