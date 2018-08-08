@@ -7,7 +7,17 @@
 //
 
 #import "Class4ViewController.h"
+#import <objc/runtime.h>
 
+@interface Sark : NSObject
+@property (nonatomic, copy) NSString *name;
+@end
+
+@implementation Sark
+- (void)speak {
+    NSLog(@"my name's %@", self.name);
+}
+@end
 @interface Class4ViewController ()
 
 @end
@@ -17,13 +27,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    object_getClass
+//     NSString *className = [NSString stringWithFormat:@"EventTracking_%@",self.class];
+//    NSLog(@"-----%@",className);
+//    id cls = [Sark class];
+//    void *obj = &cls;
+//     [(__bridge id)obj speak];
+//    object_setClass(self, cls);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)dealloc{
 
+}
 /*
 #pragma mark - Navigation
 

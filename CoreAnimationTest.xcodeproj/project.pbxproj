@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C4A76A9211821A5006DFC0A /* Lake.jpng in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A76A7211821A5006DFC0A /* Lake.jpng */; };
+		9C4A76AA211821A5006DFC0A /* Lake@2x.jpng in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A76A8211821A5006DFC0A /* Lake@2x.jpng */; };
 		9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7C92105ACFC00EA502B /* Class7ViewController.m */; };
 		9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7CC2105D43000EA502B /* Class8ViewController.m */; };
 		9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9055720F48D8D00004EE0 /* AppDelegate.m */; };
@@ -21,6 +23,8 @@
 		9CB53DA721105B50006B1491 /* Class14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB53DA621105B50006B1491 /* Class14ViewController.m */; };
 		9CB616B121008B8300512F7D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B021008B8300512F7D /* GLKit.framework */; };
 		9CB616B321008B8F00512F7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B221008B8F00512F7D /* OpenGLES.framework */; };
+		9CC28C702119905C00D801D2 /* NSOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC28C6F2119905C00D801D2 /* NSOperationTest.m */; };
+		9CC28C7521199B3B00D801D2 /* SingleDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC28C7421199B3B00D801D2 /* SingleDemo.m */; };
 		9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */; };
 		9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5920FECE300095BC13 /* FirstTableViewController.m */; };
 		9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CE0CF5E20FEE0C20095BC13 /* Class5ViewController.m */; };
@@ -48,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C4A76A7211821A5006DFC0A /* Lake.jpng */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lake.jpng; path = ../../../Images/Lake.jpng; sourceTree = "<group>"; };
+		9C4A76A8211821A5006DFC0A /* Lake@2x.jpng */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lake@2x.jpng"; path = "../../../Images/Lake@2x.jpng"; sourceTree = "<group>"; };
 		9C93C7C82105ACFC00EA502B /* Class7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class7ViewController.h; sourceTree = "<group>"; };
 		9C93C7C92105ACFC00EA502B /* Class7ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class7ViewController.m; sourceTree = "<group>"; };
 		9C93C7CB2105D43000EA502B /* Class8ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class8ViewController.h; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 		9CB53DA621105B50006B1491 /* Class14ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class14ViewController.m; sourceTree = "<group>"; };
 		9CB616B021008B8300512F7D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		9CB616B221008B8F00512F7D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9CC28C6F2119905C00D801D2 /* NSOperationTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationTest.m; sourceTree = "<group>"; };
+		9CC28C7321199B3B00D801D2 /* SingleDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleDemo.h; sourceTree = "<group>"; };
+		9CC28C7421199B3B00D801D2 /* SingleDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleDemo.m; sourceTree = "<group>"; };
 		9CC96D7E20FDCA1600E5A564 /* Class3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class3ViewController.h; sourceTree = "<group>"; };
 		9CC96D7F20FDCA1600E5A564 /* Class3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class3ViewController.m; sourceTree = "<group>"; };
 		9CE0CF5820FECE300095BC13 /* FirstTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
@@ -117,6 +126,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C4A76A62118217D006DFC0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C4A76A7211821A5006DFC0A /* Lake.jpng */,
+				9C4A76A8211821A5006DFC0A /* Lake@2x.jpng */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		9C93C7C52105ACC200EA502B /* Class7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +184,8 @@
 		9CA9055520F48D8D00004EE0 /* CoreAnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				9CC28C7221199AFE00D801D2 /* Class */,
+				9C4A76A62118217D006DFC0A /* Supporting Files */,
 				9CB53DA421105B25006B1491 /* Class14 */,
 				9C93C7C72105ACD700EA502B /* Class9 */,
 				9C93C7C62105ACCD00EA502B /* Class8 */,
@@ -193,6 +213,7 @@
 			children = (
 				9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */,
 				9CA9057120F48D8F00004EE0 /* Info.plist */,
+				9CC28C6F2119905C00D801D2 /* NSOperationTest.m */,
 			);
 			path = CoreAnimationTestTests;
 			sourceTree = "<group>";
@@ -223,6 +244,15 @@
 				9CB53DA621105B50006B1491 /* Class14ViewController.m */,
 			);
 			path = Class14;
+			sourceTree = "<group>";
+		};
+		9CC28C7221199AFE00D801D2 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				9CC28C7321199B3B00D801D2 /* SingleDemo.h */,
+				9CC28C7421199B3B00D801D2 /* SingleDemo.m */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 		9CC96D7D20FDC92900E5A564 /* Class3 */ = {
@@ -378,8 +408,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA9056320F48D8F00004EE0 /* LaunchScreen.storyboard in Resources */,
+				9C4A76AA211821A5006DFC0A /* Lake@2x.jpng in Resources */,
 				9CA9056020F48D8F00004EE0 /* Assets.xcassets in Resources */,
 				9CA9055E20F48D8D00004EE0 /* Main.storyboard in Resources */,
+				9C4A76A9211821A5006DFC0A /* Lake.jpng in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +446,7 @@
 				9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */,
 				9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */,
 				9CA9056620F48D8F00004EE0 /* main.m in Sources */,
+				9CC28C7521199B3B00D801D2 /* SingleDemo.m in Sources */,
 				9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */,
 				9CE0CF6220FEE0DC0095BC13 /* Class4ViewController.m in Sources */,
 				9CE50A9C2101DFC100DC5116 /* ReflectionView.m in Sources */,
@@ -424,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC28C702119905C00D801D2 /* NSOperationTest.m in Sources */,
 				9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

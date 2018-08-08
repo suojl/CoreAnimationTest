@@ -20,11 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //load color image
-    UIImage *image = [UIImage imageNamed:@"scenery.png"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lake" ofType:@"jpng"];
+    NSData *imageData = [NSData dataWithContentsOfFile:filePath];
+
+    UIImage *image = [[UIImage alloc] initWithData:imageData];
     //load mask image
-    UIImage *mask = [UIImage imageNamed:@"SnowmanMask.png"];
+    UIImage *mask = [UIImage imageNamed:@"Lake.png"];
     //convert mask to correct format
-    CGColorSpaceRef graySpace = CGColorSpaceCreateDeviceCMYK();
+    CGColorSpaceRef graySpace = CGColorSpaceCreateDeviceGray();
     CGImageRef maskRef = CGImageCreateCopyWithColorSpace(mask.CGImage, graySpace);
     CGColorSpaceRelease(graySpace);
     //combine images
