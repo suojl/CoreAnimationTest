@@ -104,6 +104,7 @@
                         <segue destination="sh2-gC-2od" kind="show" identifier="Class7Segue" id="3z4-Vv-Elh"/>
                         <segue destination="wFT-ra-oY3" kind="show" identifier="Class8Segue" id="Jab-mE-kLd"/>
                         <segue destination="CBp-Ub-cBL" kind="show" identifier="Class14Segue" id="uBI-lV-0zC"/>
+                        <segue destination="2ZO-2e-vPS" kind="show" identifier="Class9Segue" id="eYS-AQ-Y1p"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tuf-iz-Quz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -351,6 +352,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vcj-8X-vVn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2623.125" y="1540.1408450704225"/>
+        </scene>
+        <!--Custom Show List View Controller-->
+        <scene sceneID="Nky-Wx-oez">
+            <objects>
+                <viewController id="2ZO-2e-vPS" customClass="CustomShowListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Iwk-Gu-eeK"/>
+                        <viewControllerLayoutGuide type="bottom" id="uhF-XP-Sw6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q6Q-Kp-lUw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IeB-bD-AAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3574" y="1582"/>
         </scene>
         <!--Class6 View Controller-->
         <scene sceneID="tFi-AO-wSc">

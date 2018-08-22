@@ -2,13 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Lake.png",
+      "filename" : "Lake.jpng.png",
       "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "filename" : "Lake@2x.png",
-      "scale" : "2x"
     }
   ],
   "info" : {

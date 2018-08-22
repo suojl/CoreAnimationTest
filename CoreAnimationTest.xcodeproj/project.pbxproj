@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C4A76A9211821A5006DFC0A /* Lake.jpng in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A76A7211821A5006DFC0A /* Lake.jpng */; };
-		9C4A76AA211821A5006DFC0A /* Lake@2x.jpng in Resources */ = {isa = PBXBuildFile; fileRef = 9C4A76A8211821A5006DFC0A /* Lake@2x.jpng */; };
+		9C08164F211BDA91004CD344 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C08164E211BDA91004CD344 /* TestModel.m */; };
 		9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7C92105ACFC00EA502B /* Class7ViewController.m */; };
 		9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93C7CC2105D43000EA502B /* Class8ViewController.m */; };
 		9CA9055820F48D8D00004EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9055720F48D8D00004EE0 /* AppDelegate.m */; };
@@ -20,6 +19,8 @@
 		9CA9057020F48D8F00004EE0 /* CoreAnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9056F20F48D8F00004EE0 /* CoreAnimationTestTests.m */; };
 		9CA9057B20F48D8F00004EE0 /* CoreAnimationTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */; };
 		9CA9058A20F4928200004EE0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CA9058920F4928200004EE0 /* QuartzCore.framework */; };
+		9CAEA78C212D6CDF005FF187 /* CustomShowListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAEA78B212D6CDF005FF187 /* CustomShowListViewController.m */; };
+		9CAEA78F212D6EFC005FF187 /* DisplayListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAEA78E212D6EFC005FF187 /* DisplayListView.m */; };
 		9CB53DA721105B50006B1491 /* Class14ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB53DA621105B50006B1491 /* Class14ViewController.m */; };
 		9CB616B121008B8300512F7D /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B021008B8300512F7D /* GLKit.framework */; };
 		9CB616B321008B8F00512F7D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CB616B221008B8F00512F7D /* OpenGLES.framework */; };
@@ -52,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C08164D211BDA91004CD344 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		9C08164E211BDA91004CD344 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		9C4A76A7211821A5006DFC0A /* Lake.jpng */ = {isa = PBXFileReference; lastKnownFileType = file; name = Lake.jpng; path = ../../../Images/Lake.jpng; sourceTree = "<group>"; };
 		9C4A76A8211821A5006DFC0A /* Lake@2x.jpng */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lake@2x.jpng"; path = "../../../Images/Lake@2x.jpng"; sourceTree = "<group>"; };
 		9C93C7C82105ACFC00EA502B /* Class7ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class7ViewController.h; sourceTree = "<group>"; };
@@ -75,6 +78,10 @@
 		9CA9057A20F48D8F00004EE0 /* CoreAnimationTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreAnimationTestUITests.m; sourceTree = "<group>"; };
 		9CA9057C20F48D8F00004EE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA9058920F4928200004EE0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9CAEA78A212D6CDF005FF187 /* CustomShowListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomShowListViewController.h; sourceTree = "<group>"; };
+		9CAEA78B212D6CDF005FF187 /* CustomShowListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomShowListViewController.m; sourceTree = "<group>"; };
+		9CAEA78D212D6EFC005FF187 /* DisplayListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DisplayListView.h; sourceTree = "<group>"; };
+		9CAEA78E212D6EFC005FF187 /* DisplayListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisplayListView.m; sourceTree = "<group>"; };
 		9CB53DA521105B50006B1491 /* Class14ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Class14ViewController.h; sourceTree = "<group>"; };
 		9CB53DA621105B50006B1491 /* Class14ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Class14ViewController.m; sourceTree = "<group>"; };
 		9CB616B021008B8300512F7D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -156,6 +163,10 @@
 		9C93C7C72105ACD700EA502B /* Class9 */ = {
 			isa = PBXGroup;
 			children = (
+				9CAEA78A212D6CDF005FF187 /* CustomShowListViewController.h */,
+				9CAEA78B212D6CDF005FF187 /* CustomShowListViewController.m */,
+				9CAEA78D212D6EFC005FF187 /* DisplayListView.h */,
+				9CAEA78E212D6EFC005FF187 /* DisplayListView.m */,
 			);
 			path = Class9;
 			sourceTree = "<group>";
@@ -251,6 +262,8 @@
 			children = (
 				9CC28C7321199B3B00D801D2 /* SingleDemo.h */,
 				9CC28C7421199B3B00D801D2 /* SingleDemo.m */,
+				9C08164D211BDA91004CD344 /* TestModel.h */,
+				9C08164E211BDA91004CD344 /* TestModel.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -408,10 +421,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CA9056320F48D8F00004EE0 /* LaunchScreen.storyboard in Resources */,
-				9C4A76AA211821A5006DFC0A /* Lake@2x.jpng in Resources */,
 				9CA9056020F48D8F00004EE0 /* Assets.xcassets in Resources */,
 				9CA9055E20F48D8D00004EE0 /* Main.storyboard in Resources */,
-				9C4A76A9211821A5006DFC0A /* Lake.jpng in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,14 +447,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAEA78C212D6CDF005FF187 /* CustomShowListViewController.m in Sources */,
 				9CA9055B20F48D8D00004EE0 /* ViewController.m in Sources */,
 				9CC96D8020FDCA1600E5A564 /* Class3ViewController.m in Sources */,
 				9CE0CF5A20FECE300095BC13 /* FirstTableViewController.m in Sources */,
 				9CE0CF5F20FEE0C20095BC13 /* Class5ViewController.m in Sources */,
 				9CB53DA721105B50006B1491 /* Class14ViewController.m in Sources */,
 				9C93C7CA2105ACFC00EA502B /* Class7ViewController.m in Sources */,
+				9C08164F211BDA91004CD344 /* TestModel.m in Sources */,
 				9CE0CF6520FEE0EC0095BC13 /* Class6ViewController.m in Sources */,
 				9C93C7CD2105D43000EA502B /* Class8ViewController.m in Sources */,
+				9CAEA78F212D6EFC005FF187 /* DisplayListView.m in Sources */,
 				9CE0CF6920FF3FDC0095BC13 /* DiceViewController.m in Sources */,
 				9CA9056620F48D8F00004EE0 /* main.m in Sources */,
 				9CC28C7521199B3B00D801D2 /* SingleDemo.m in Sources */,

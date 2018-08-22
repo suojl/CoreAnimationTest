@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TestModel.h"
 
 @interface CoreAnimationTestTests : XCTestCase
 
@@ -76,6 +77,25 @@
         });
     }
     NSLog(@"end");
+}
+
+- (void)testModel {
+//    TestModel *model = [TestModel new];
+//    model.text = @"aaaaaaaaaaaaaaaa";
+//    model.index = 888;
+//    NSLog(@"----%@",model);
+    NSString *aaa = [NSString stringWithFormat:@"aaa"];
+    NSLog(@"---%p",aaa);
+    NSMutableArray *arr = [NSMutableArray new];
+    [arr addObject:aaa];
+    NSLog(@"---%p",arr);
+    NSLog(@"---%p",arr[0]);
+    aaa = [NSString stringWithFormat:@"bbb"];
+    NSLog(@"---%p",aaa);
+
+
+    NSLog(@"---aaa:%@",aaa);
+    NSLog(@"---arr:%@",arr);
 }
 
 - (void)testPerformanceExample {

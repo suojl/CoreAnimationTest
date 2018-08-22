@@ -25,7 +25,7 @@
     /*---------------------CAShapeLayer--------------*/
     UIView *cornerView = [UIView new];
     cornerView.frame = CGRectMake(50, 84, 100, 100);
-    cornerView.backgroundColor = [UIColor redColor];
+    cornerView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:cornerView];
     //define path parameters
     CGRect rect = CGRectMake(0, 0, 100, 100);
@@ -37,9 +37,11 @@
     shapeLayer.path = path.CGPath;
     shapeLayer.strokeColor = [UIColor redColor].CGColor;
     shapeLayer.fillColor = [UIColor redColor].CGColor;
+
 //    shapeLayer.lineWidth = 5;
 //    shapeLayer.lineJoin = kCALineJoinRound;
 //    shapeLayer.lineCap = kCALineCapRound;
+
     cornerView.layer.mask = shapeLayer;
     /*---------------------CAShapeLayer--------------*/
 

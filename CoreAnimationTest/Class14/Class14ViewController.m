@@ -20,23 +20,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     //load color image
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lake" ofType:@"jpng"];
-    NSData *imageData = [NSData dataWithContentsOfFile:filePath];
-
-    UIImage *image = [[UIImage alloc] initWithData:imageData];
-    //load mask image
-    UIImage *mask = [UIImage imageNamed:@"Lake.png"];
-    //convert mask to correct format
-    CGColorSpaceRef graySpace = CGColorSpaceCreateDeviceGray();
-    CGImageRef maskRef = CGImageCreateCopyWithColorSpace(mask.CGImage, graySpace);
-    CGColorSpaceRelease(graySpace);
-    //combine images
-    CGImageRef resultRef = CGImageCreateWithMask(image.CGImage, maskRef);
-    UIImage *result = [UIImage imageWithCGImage:resultRef];
-    CGImageRelease(resultRef);
-    CGImageRelease(maskRef);
+//    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Lake" ofType:@"jpng"];
+//    NSData *imageData = [NSData dataWithContentsOfFile:filePath];
+//
+//    UIImage *image = [[UIImage alloc] initWithData:imageData];
+//    //load mask image
+//    UIImage *mask = [UIImage imageNamed:@"Lake.png"];
+//    //convert mask to correct format
+//    CGColorSpaceRef graySpace = CGColorSpaceCreateDeviceGray();
+//    CGImageRef maskRef = CGImageCreateCopyWithColorSpace(mask.CGImage, graySpace);
+//    CGColorSpaceRelease(graySpace);
+//    //combine images
+//    CGImageRef resultRef = CGImageCreateWithMask(image.CGImage, maskRef);
+//    UIImage *result = [UIImage imageWithCGImage:resultRef];
+//    CGImageRelease(resultRef);
+//    CGImageRelease(maskRef);
     //display result
-    self.imageView.image = result;
+//    self.imageView.image = result;
 //    self.imageView.image = [UIImage imageNamed:@"scenery.png"];
 //    CALayer *maskLayer = [CALayer layer];
 //    maskLayer.frame = self.imageView.bounds;
