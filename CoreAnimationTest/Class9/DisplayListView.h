@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DisplayListView : UIView
+@interface DisplayListView : UIView <UIGestureRecognizerDelegate>
 
+@property (nonatomic, strong) UIView *contentView;
+@property (nonatomic, assign) double contentViewHeight;
+
+- (void)showView;
+- (void)hiddenView;
 @end

@@ -33,8 +33,10 @@
 
 //    // 1、创建串行队列
 //    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_SERIAL);
+//    NSLog(@"%@--start",[NSThread currentThread]);
 //    // 2、将任务添加到队列，并且指定同步执行
 //    for (int i = 0; i < 10; i++) {
+//        NSLog(@"-------%d",i);
 //        dispatch_sync(queue, ^{
 //            NSLog(@"%@--%d",[NSThread currentThread],i);
 //        });
@@ -56,27 +58,28 @@
 //    NSLog(@"hello %@", [NSThread currentThread]);
 
     // 1. 创建并发队列
-//    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
-//    // 2. 将任务添加到队列, 并且指定同步执行
-//    for (int i = 0; i < 10; i++) {
-////        NSLog(@"%@===========================", [NSThread currentThread]);
-//        dispatch_sync(queue, ^{
-//            NSLog(@"%@ %d", [NSThread currentThread], i);
-//        });
-//    }
-//    NSLog(@"%@============aaaaa===============", [NSThread currentThread]);
-
-    NSLog(@"begin");
-    // 1. 获取主队列
-    dispatch_queue_t q = dispatch_get_main_queue();
-    // 2. 将任务添加到主队列, 并且指定同步执行
-    // 死锁
-    for (int i = 0; i < 10; i++) {
-        dispatch_async(q, ^{
+    dispatch_queue_t queue = dispatch_queue_create("test", DISPATCH_QUEUE_CONCURRENT);
+    // 2. 将任务添加到队列, 并且指定同步执行
+    NSLog(@"%@============start===============", [NSThread currentThread]);
+    for (int i = 0; i < 100; i++) {
+        NSLog(@"%@===========================%d", [NSThread currentThread],i);
+        dispatch_sync(queue, ^{
             NSLog(@"%@ %d", [NSThread currentThread], i);
         });
     }
-    NSLog(@"end");
+    NSLog(@"%@============end===============", [NSThread currentThread]);
+
+//    NSLog(@"begin");
+//    // 1. 获取主队列
+//    dispatch_queue_t q = dispatch_get_main_queue();
+//    // 2. 将任务添加到主队列, 并且指定同步执行
+//    // 死锁
+//    for (int i = 0; i < 10; i++) {
+//        dispatch_async(q, ^{
+//            NSLog(@"%@ %d", [NSThread currentThread], i);
+//        });
+//    }
+//    NSLog(@"end");
 }
 
 - (void)testModel {

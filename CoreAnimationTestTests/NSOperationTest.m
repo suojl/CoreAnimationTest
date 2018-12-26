@@ -70,6 +70,7 @@
     [operationQueue2 addOperation:op5];
     [operationQueue1 addOperation:op6];
 
+    [self waitForExpectationsWithTimeout:10 handler:nil];
 }
 
 - (void)testConst {
